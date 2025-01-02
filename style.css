@@ -1,0 +1,120 @@
+body{
+    background-image:linear-gradient(rgba(231, 226, 226, 0.7),rgba(245, 236, 236, 0.7)),url(Calculator\ Background.jpeg.jpg);
+    
+    background-size: cover;
+    background-image:cover; 
+    /* background-repeat: no-repeat; */
+}
+
+
+#but{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+     gap: 10px;
+    height:350px ;
+   margin-left: 5px;
+}
+    
+#cal{
+    border: 2px solid black;
+    height: 500px;
+    width: 350px;
+    margin-top: 120px;
+    margin-left: 500px;
+    text-align: center;
+    background-color: black;
+    background-image: linear-gradient(black,white);
+    margin-right: 30px;
+    
+    border-radius: 6px;
+    
+
+
+}
+#cal{
+    /* height: 500px;
+    width: 360px; */
+    animation: head 6s infinite;
+}
+@keyframes head {
+    50% {box-shadow: 50px 50px 60px darkslategray;}
+}
+
+
+#in{
+    margin-top: 30px;
+    margin-left: 10px;
+    border: 1px solid black;
+    height: 90px;
+    width: 250px;
+    background-color: aliceblue;
+    font-size: xx-large;
+}
+#in {
+    animation: input 5s infinite;
+}
+@keyframes input{
+     50%{box-shadow: 10px 10px 20px rgb(247, 250, 250);}
+}
+.btn{
+    border-radius: 60px;
+    /* margin-top: 10px;
+    margin-right: 10px; */
+    background-color: rgb(21, 236, 243);
+    color:red;
+    font-size: larger;
+    cursor: pointer;
+
+}
+/* .btn-eql{
+    grid-column: 2/4;
+} */
+.btns{
+    border-radius: 60px;
+    font-size: larger;
+    cursor: pointer;
+    background-color: orange;
+    color: blue;
+}
+/* button:hover{
+    box-shadow: 2px 2px 3px red;
+    background-image:linear-gradient(lightblue,white);
+    color:black;
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    50% {border-end-start-radius: 15%;} */
+
+#in{
+    transition: width 2s;
+}
+#in:hover{
+    width: 335px;
+}
+/* .btns:hover{
+    animation: we 5s infinite;
+}
+@keyframes we{
+    50%{border-top-right-radius: 15px;}
+} */
+
+.btn:active {
+    
+    transform: translateY(5px);
+  }
+
+.btns:active {
+      
+      transform: translateY(5px);
+    }
+.btns:hover{
+    background-image: linear-gradient(rgb(238, 132, 132),rgb(120, 184, 243));
+    color: azure;
+}
+.btn:hover{
+    background-image: linear-gradient(rgb(28, 230, 21),rgb(255, 238, 0));
+    color: black;
+}
